@@ -3,7 +3,8 @@ package act_reloj;
 import java.time.LocalDateTime;
 
 public class Reloj {
-
+  que miras jajaja
+          
     protected LocalDateTime fecha;
     protected String modelo;
     protected String numSerie;
