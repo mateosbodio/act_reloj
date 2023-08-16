@@ -6,7 +6,7 @@ package act_reloj;
 
 /**
  *
- * @author Mateo
+ * @author Mateo Sbodio - Guillermo Rosales
  */
 public class NewMain {
 
