@@ -21,6 +21,11 @@ public class relojFit extends Reloj {
         int latidos= random.nextInt(140-60+1)+60;
         System.out.println("frecuencia por minuto: "+latidos);
     }
+
+    @Override
+    public String toString() {
+        return "relojFit{" + '}';
+    }
     
     
 }

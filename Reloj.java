@@ -1,74 +1,26 @@
 package act_reloj;
 
-import java.time.LocalDateTime;
+/**
+ *
+ * @author Mateo
+ */
+public class NewMain {
 
-public class Reloj {
+    /**
+     * @param args the command line arguments
     
-    protected LocalDateTime fecha;
-    protected String modelo;
-    protected String numSerie;
-
-    public Reloj(String modelo, String numSerie) {
-        this.fecha = LocalDateTime.now();
-        this.modelo = modelo;
-        this.numSerie = numSerie;
+     */
+    public static void main(String[] args) {
+    Persona p1= new Persona("jkkk",20,175);
+    Persona p2= new Persona("mmm",25,173);
+    Reloj r1= new Reloj("casio","12345");
+    relojFit r2= new relojFit("rolex","25767");
+        System.out.println(p1.getNombre());
+    p1.hablar(r1);
+    p1.decirHora(r1);
+        System.out.println(p2.getNombre());
+    p2.comer(r2);
+    p2.decirHora(r2);
     }
-
-    public LocalDateTime getFecha() {
-        return fecha;
-    }
-
-    public String getModelo() {
-        return modelo;
-    }
-
-    public String getNumSerie() {
-        return numSerie;
-    }
-
-    public void setFecha(LocalDateTime fecha) {
-        this.fecha = fecha;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public void setNumSerie(String numSerie) {
-        this.numSerie = numSerie;
-    }
-
-    public void mostarHora() {
-        System.out.printf("Hora Actual: %s\n", fecha.toLocalTime().toString());
-    }
-
-    public void mostarFecha() {
-        System.out.printf("Hora Actual: %s\n", fecha.toLocalDate().toString());
-    }
-
-    public void incrementarDia() {
-        LocalDateTime nuevaFecha = fecha.plusDays(1);
-        fecha = nuevaFecha;
-    }
-
-    public void incrementarHora() {
-        LocalDateTime nuevaFecha = fecha.plusHours(1);
-        fecha = nuevaFecha;
-    }
-
-    public String getModelo(Reloj r1) {
-        return modelo;
-    }
-
-    public String getNumSerie(Reloj r1) {
-        return numSerie;
-    }
-
-    public void limpiarPantalla() {
-
-    }
-
-    public void traducirFrecuncia() {
-    }
-
+    
 }

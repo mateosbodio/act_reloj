@@ -8,9 +8,6 @@ public class Persona {
 
     private double altura;
 
-    public Persona() {
-    }
-
     public Persona(String nombre, int edad, double altura) {
         this.nombre = nombre;
         this.edad = edad;
@@ -53,4 +50,11 @@ public class Persona {
     public void hablar(Reloj r1) {
         System.out.println("hola, buenos dias. la hora es: "+r1.getFecha());
     }
+
+    @Override
+    public String toString() {
+        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + ", altura=" + altura + '}';
+    }
+
+
 }
